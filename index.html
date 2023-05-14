@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <textarea readonly id="input" rows="1" cols="50"></textarea> <br>
+    <table>
+        <tr><button onclick="buttonClicked('1')">1</button><button onclick="buttonClicked('2')">2</button><button onclick="buttonClicked('3')">3</button><button onclick="buttonClicked('+')">+</button></tr><br>
+        <tr><button onclick="buttonClicked('4')">4</button><button onclick="buttonClicked('5')">5</button><button onclick="buttonClicked('6')">6</button><button onclick="buttonClicked('-')">-</button></tr><br>
+        <tr><button onclick="buttonClicked('7')">7</button><button onclick="buttonClicked('8')">8</button><button onclick="buttonClicked('9')">9</button><button onclick="buttonClicked('*')">x</button></tr><br>
+        <tr><button onclick="buttonClicked('0')">0</button><button onclick="buttonClicked('.')">.</button><button onclick="buttonClicked('/')">&#247</button><button onclick="equal()">=</button></tr><br>
+        <tr><button onclick="contentCleared()">Clear</button></tr>
+    </table>
+    <textarea readonly id="output" rows="1" cols="50"></textarea>
+</body>
+</html>

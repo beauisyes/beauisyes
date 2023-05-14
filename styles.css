@@ -1,0 +1,24 @@
+body {
+    background-color: black;
+}
+button {
+    padding: 15px;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: gray;
+    border: solid 2px black;
+    border-radius: 20px;
+    margin: 5px;
+    color:black;
+    transition: transform .5s;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+textarea {
+    font-size: 50px;
+    background-color: gray;
+}
