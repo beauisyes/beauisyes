@@ -4,19 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Quiz about me</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
 </head>
 <body>
-    <textarea readonly id="input" rows="1" cols="50"></textarea> <br>
-    <table>
-        <tr><button onclick="buttonClicked('1')">1</button><button onclick="buttonClicked('2')">2</button><button onclick="buttonClicked('3')">3</button><button onclick="buttonClicked('+')">+</button></tr><br>
-        <tr><button onclick="buttonClicked('4')">4</button><button onclick="buttonClicked('5')">5</button><button onclick="buttonClicked('6')">6</button><button onclick="buttonClicked('-')">-</button></tr><br>
-        <tr><button onclick="buttonClicked('7')">7</button><button onclick="buttonClicked('8')">8</button><button onclick="buttonClicked('9')">9</button><button onclick="buttonClicked('*')">x</button></tr><br>
-        <tr><button onclick="buttonClicked('0')">0</button><button onclick="buttonClicked('.')">.</button><button onclick="buttonClicked('/')">&#247</button><button onclick="equal()">=</button></tr><br>
-        <tr><button onclick="contentCleared()">Clear</button></tr>
-    </table>
-    <textarea readonly id="output" rows="1" cols="50"></textarea>
+    <img src="beau.jpg">
+    <header id="top">
+        <button id="button"class="button" type="button"><span>Quiz about me!</span></button>
+        <nav>
+            <a href="https://www.youtube.com">Youtube</a> |
+            <a href="https://google.com">Google</a> |
+            <a href="https://code.org">Code.org</a>
+        </nav>
+    </header>
+    <div id="main">
+        <h3>1. When is my birthday?</h3>
+            <input type="radio" value="wrong" name="answer1">
+            <label for="name"> July 5, 2007</label>
+            <br>
+            <input type="radio" value="wrong" name="answer1"> 
+            <label for="bday"> June 6, 2007</label>
+            <br>
+            <input type="radio" value="wrong" name="answer1">
+            <label for="bday"> June 6, 2006</label>
+            <br>
+            <input type="radio" value="right" name="answer1">
+            <label for="bday"> June 5, 2007</label>
+        <h3>2. What is my name?</h3>
+            <input type="radio" value="wrong" name="answer2">
+            <label for="MyName"> Will</label>
+            <br>
+            <input type="radio" value="right" name="answer2">
+            <label for="MyName"> Beau</label>
+            <br>
+            <input type="radio" value="wrong" name="answer2">
+            <label for="MyName"> Beauron</label>
+            <br>
+            <input type="radio" value="wrong" name="answer2">
+            <label for="MyName"> William</label>
+        <h3>3. What do I wanna be?</h3>
+            <input type="radio" value="wrong" name="answer3">
+            <label for="career"> Homeless Man</label>
+            <br>
+            <input type="radio" value="right" name="answer3">
+            <label for="career"> Software Engineer</label>
+            <br>
+            <input type="radio" value="wrong" name="answer3">
+            <label for="career"> Fullstack Developer</label>
+            <br> 
+        <h3>4. What is my favorite number?</h3>
+            <input type="radio" value="right" name="answer4">
+            <label for="number"> 69</label>
+            <br>
+            <input type="radio" value="wrong" name="answer4">
+            <label for="number"> 1</label>
+            <br>
+            <input type="radio" value="wrong" name="answer4"> 
+            <label for="number"> 100</label>
+        <br>
+        <br>
+        <button id="submitbutton" type="submit" value="Submit" onclick="return submit();"> Submit! </button>
+        <h2>Results:</h2>
+        <p id="results"></p>
+    </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
