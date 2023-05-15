@@ -1,24 +1,88 @@
 body {
-    background-color: black;
-}
-button {
-    padding: 15px;
-    font-size: 25px;
-    font-weight: bolder;
-    background-color: gray;
-    border: solid 2px black;
-    border-radius: 20px;
-    margin: 5px;
-    color:black;
-    transition: transform .5s;
-    cursor: pointer;
+    background-color:cornsilk;
+    margin-left: 25px;
+    font-size:16px;
 }
 
-button:hover {
+#top {
+    top: 0;
+    border:solid 5px black;
+    margin-bottom:10px;
+    padding:20px;
+}
+
+img {
+    width: 100px;
+    border-radius: 100px;
+    border: solid 5px black;
+    transition: transform 2s;
+}
+
+img:hover {
+    transform:rotate(5760deg) scale(10) translate(20px, 50%);
+}
+
+h3 {
+    transition: transform 1s;
+}
+
+h3:hover {
+    transform: scale(1.3) translate(120px, 50%);
+    color:red;
+}
+
+label:hover {
+    color: blue;
+    font-weight: bolder;
+ }
+
+ a:hover{
+    color:blueviolet;
+ }
+
+#button {
+    display: inline-block;
+    padding: 0.67em;
+    border: 2px solid #000;
+    overflow: hidden;
+    text-decoration: none;
+    font-size: 2em;
+    outline: none;
+    color: #000;
+    background: transparent;
+    font-family: 'raleway', sans-serif;
+    margin-bottom:10px;
+}
+
+#button:hover span {
+    display: none
+}
+  
+#button:hover:before {
+    content: "Secret Text!";
+    color:red;
+}
+
+#main {
+    border: solid 5px black;
+    padding-left: 25px;
+    padding-bottom: 15px;
+}
+
+#submitbutton {
+    font-size:50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+    background-color: aquamarine;
+    transition: transform .5s;
+}
+
+#submitbutton:hover {
     transform: scale(1.2);
 }
 
-textarea {
-    font-size: 50px;
-    background-color: gray;
+#results {
+    font-size: 20px;
+    font-weight: bolder;
+    
 }
